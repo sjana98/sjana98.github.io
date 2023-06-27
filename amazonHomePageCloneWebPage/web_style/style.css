@@ -1,0 +1,529 @@
+/* General css */
+*{ 
+    border: border-box;
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+}
+body,
+html{
+    font-size: 10px;
+    font-weight: 500;
+}
+:root{
+    /* background color */
+    ---bg-nav-color: #131A22;
+    ---bg-navPart3-color: #f3f3f3;
+    ---bg-icon-color:  #FEBD69;
+    ---bg-hover-color:  #f39f31;
+    ---bg-panel-color: #232F3E;
+    ---bg-footer-color: #37475A;
+    /* text color */
+    ---text-color-primary: #fff;
+    ---text-color-secondary: #cccccc;
+    ---text-color-third: #007185;
+    ---text-color-fourth: #DDDDDD;
+    ---text-color-fifth: #999999;
+    ---icon-color: #1d1f1f;
+}
+
+/* Navbar css */
+/*             Part one */
+.navbar{
+    height: 6rem;
+    background-color: var(---bg-nav-color);
+    color: var(---text-color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav-logo{
+    height: 4.5rem;
+    width: 9rem;
+}
+.logo{
+    background-image:url('../images/amazon_logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 5rem;
+    width: 100%;
+}
+.border{
+    border: .1rem solid transparent;
+    border-radius: .2rem;
+}
+.border:hover{
+    border: .1rem solid white;
+    cursor: pointer;
+}
+/*             Part two */
+.nav-address, 
+.nav-lenguage,
+.nav-signin,
+.nav-buying,
+.nav-cart{
+    height: 5rem;
+}
+.add-icon{
+    display: flex;
+}
+.address_firstLine{
+    font-size: 1.2rem;
+    color: var(---text-color-secondary);
+    margin-left: 1.5rem;
+    line-height: 1.5rem;
+    margin: .9rem .5rem 0 .5rem;
+    padding-left: 1.5rem;
+}
+.address_secondLine{
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(---text-color-primary);
+    margin-left: .3rem;
+    line-height: 1.5rem;
+}
+.add-icon > i{
+    font-size: 1.6rem;
+    margin-left: .5rem;
+}
+/*           Part three */
+.nav-search{
+    display: flex;
+    justify-content: space-evenly;
+    width: 90rem;
+    height: 4rem;
+    background-color: var(---bg-icon-color);
+    border-radius: .5rem;
+}
+.search-select{
+    background-color: var(---bg-navPart3-color);
+    width: 6rem;
+    text-align: center;
+    border-radius: 0.4rem 0 0 .4rem ;
+    border: none;
+    border-right: .1rem solid var(---text-color-secondary);
+}
+.search-input{
+    width: 100%;
+    font-size: 1.6rem;
+    padding: .5rem;
+    border: none;
+}
+.search-icon{
+    width: 4.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    color: var(---icon-color);
+    border-radius: 0 0.4rem .4rem 0;
+}
+.nav-search:hover{
+    border: .3rem solid var(---bg-hover-color);
+}
+/*               Part four */
+.panel_select{
+    background-color: transparent;
+    color: var(---text-color-primary);
+    border: none;
+}
+.nav-lenguage{
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+}
+.nav-lenguage i{
+    margin: .5rem;
+}
+.nav-lenguage .navText_secondLine{
+    margin-right: .5rem;
+    font-weight: 700;
+}
+/*              Part five */
+.nav-signin .navText_firstLine{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: .9rem .5rem 0 .5rem;
+}
+.nav-signin .navText_secondLine{
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    margin: 0 .3rem 0 .3rem;
+}
+/*              Part six */
+.nav-buying .navText_firstLine{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: .9rem .5rem 0 .5rem;
+}
+.nav-buying .navText_secondLine{
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    margin: 0 .5rem 0 .5rem;
+}
+/*             Part seven */
+.nav-cart .navText_secondLine{
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    margin: 0 .5rem 0 0;
+}
+.nav-cart{
+    display: flex;
+    align-items: center;
+}
+.nav-cart i{
+    font-size: 3rem;
+    margin-right: .3rem;
+    margin-left: .5rem;
+}
+
+/* Nav pannel css */
+.panel{
+    height: 4rem;
+    background-color: var(---bg-panel-color);
+    color: var(---text-color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.4rem;
+}
+.panel-ops{
+    display: flex;
+    font-weight: 500;
+}
+.panel-ops div{
+    margin: 0.4rem;
+    height: 3.2rem;
+}
+.panel-ops p{
+    margin: 0.9rem 0.5rem;
+}
+.panel-all,
+.panel-deals{
+    font-weight: 600;
+    height: 3.2rem;
+    font-size: 1.6rem;
+}
+.panel-all i{
+    margin: .9rem 0 0 .5rem;
+}
+.panel-all span{
+    margin: 0 0.5rem 0 0;
+}
+.panel-ops{
+    width: 82%;
+}
+.panel-deals p{
+    margin: .7rem .5rem 0 .5rem;
+}
+
+/* Banner css */
+.banner{
+    height: 35rem;
+    background-image: url('/images/banner_image.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.banner-msg{
+    height: 4rem;
+    background-color: #F5F6F6;
+    font-size: 1.4rem;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    width: 98%;
+}
+.banner-msg a{
+    color: var(---text-color-third);
+}
+
+/* Main css */
+.shoping{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background:  linear-gradient(to left, #869b9c70, #324065); ;
+}
+.shoping .box{
+    height: 40rem;
+    width: 23.7%;
+    padding: 2rem 0rem 1.5rem;
+    background-color: white;
+    margin-top: 1.9rem;
+}
+.box-img{
+    height: 30rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.box-content{
+    margin: 0 1.8rem 0 1.8rem;
+}
+.shoping h2{
+    font-size: 2.1rem;
+    margin-bottom: 1rem;
+}
+.shoping p{
+    margin-top: 3rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(---text-color-third);
+}
+.shoping p:hover{
+    cursor: pointer;
+    color: var(---bg-hover-color);
+    text-decoration: underline;
+} 
+.longbox{
+    height: 25rem;
+    width: 98%;
+    padding: 2rem 0rem 1.5rem;
+    background-color: white;
+    margin-top: 1.9rem;
+}
+.book-img{
+    height: 18rem;
+    margin-left: 1.8rem;
+    margin-right: 1.8rem;
+}
+.book-img img{
+    padding: 0 .8rem 0 1.8rem;
+}
+.longbox h2{
+    margin-left: 1.8rem;
+}
+.book-img img:hover{
+    cursor: pointer;
+}
+.endbox{
+    height: 18.6rem;
+    width: 100%;
+    background-color: white;
+    margin-top: 1.9rem;
+}
+.end-content{
+    margin-top: 5rem;
+}
+.end-content span, button{
+    margin-top: .7rem;
+}
+.endbox .span1{
+    margin-top: 3rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.endbox .span2{
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.endbox .span2 .inner_span{
+    color: var(---text-color-third);
+}
+.end-content .msg, button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.end-content button{
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: .7rem 9.5rem ;
+    border: .1rem solid #bb7920;
+    background:  linear-gradient(to bottom, #fbdb7c, #e9ab0b); ;
+    border-radius: .5rem;
+}
+.end-content button:hover{
+    cursor: pointer;
+}
+.endbox .inner_span:hover{
+    cursor: pointer;
+    color: var(---bg-hover-color);
+}
+.end-content{
+    border-top: .1rem solid rgba(128, 128, 128, 0.233);
+    border-bottom: .1rem solid  rgba(128, 128, 128, 0.233);
+}
+
+/* Footer css */
+/*         section1 */
+.fop1-bg{
+    background: linear-gradient(to left, #869b9c70, #324065); 
+    display: flex;
+    align-items: end;
+}
+.foot-section1{
+    height: 4.9rem;
+    background-color: var(---bg-footer-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+    width: 100%;
+    text-decoration: none;
+}
+.foot-section1 a{
+    color: var(---text-color-primary);
+}
+.foot-section1:hover{
+    cursor: pointer;
+    background-color: #48596c;
+}
+/*         section2 */
+.foot-section2{
+    height: 40rem;
+    background-color: var(---bg-panel-color);
+    display: flex;
+    justify-content: space-evenly;
+    color: var(---text-color-primary);
+}
+.foot-section2 .listpanel{
+    display: flex;
+}
+.foot-section2 p{
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-top: 5rem;
+    margin-bottom: 1.5rem;
+}
+.foot-section2 a{
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    color: var(---text-color-fourth);
+}
+.same_ln{
+    display: block;
+   line-height: 1.7rem;
+}
+.foot-section2 .lt1{
+    margin-right: 13.5rem;
+}
+.foot-section2 .lt2{
+    margin-right: 13.5rem;
+}
+.foot-section2 .lt3{
+    margin-right: 12rem;
+}
+.foot-section2 a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+/*         section3 */
+.footer-section3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(---bg-panel-color);
+    height: 10.8rem;
+    border-top: .1rem solid var(---bg-footer-color);
+}
+.footer_btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    font-size: 1.3rem;
+    color: var(---text-color-secondary);
+    background-color: var(---bg-panel-color);
+    border: .1rem solid gray;
+    margin: .4rem;
+    padding: .9rem 3rem .9rem .9rem;
+    border-radius: .3rem;
+    font-weight: 500;
+}
+.btn i{
+    margin-right: .7rem;
+}
+.fbtn{
+    margin-left: 8rem;
+    padding-right: .8rem;
+}
+.footer-section3 .nav-logo, .footer_btns{
+    margin-bottom: 2rem;
+}
+.fa-sort-down{
+    margin-left: 3rem;
+}
+.btn,.logo:hover{
+    cursor: pointer;
+}
+/*         section4 */
+.footer-section4{
+    background-color: var(---bg-nav-color);
+    height: 43.1rem ;
+}
+ .footer-section4{
+    box-sizing: border-box;
+    padding-top: 3rem;
+ }
+ table{
+    border-collapse: collapse;
+    width: 100%;
+ }
+.footerMoreOnAmazon{
+    margin: 0 auto;
+    max-width: 100.5rem;
+}
+.footerMoreOnAmazon a{
+    color: var(---text-color-fourth) ; 
+    font-weight: 500;
+}
+.navFooterDescText {
+    color: var(---text-color-fifth);
+    line-height: 110%;
+    display: block;
+    margin-bottom: 1.5rem
+}
+.navFooterDescItem{
+    font-size: 1.2rem;
+    vertical-align: top;
+    text-align: left;
+    line-height: 115%;
+}
+.nfdi{
+    padding: 0 0 0 5.9rem;
+}
+.footerMoreOnAmazon a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+/*         section5 */
+.footer-section5{
+    background-color: var(---bg-nav-color);
+    height: 5.6rem ;
+    padding-top: 6rem;
+    color: var(---text-color-fourth); 
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+    border-bottom: 1.5rem solid var(---bg-nav-color);
+}
+.footer-section5 a{
+    padding-left: 1.5rem;
+    color: var(---text-color-fourth); 
+} 
+.secondMsg{
+    margin-top: .5rem;
+}
+.footer-section5 a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.firstMsg img{
+    width: 28px;
+    height: 15px;
+    padding: 0 0 0 7.2px;
+}
