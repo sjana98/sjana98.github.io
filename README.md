@@ -1,1 +1,1 @@
-# sjana98.github.io this repo is for coursera assignments.
+This repo is for coursera assignments.
