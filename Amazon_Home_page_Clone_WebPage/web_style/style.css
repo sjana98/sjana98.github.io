@@ -44,7 +44,7 @@ html{
     width: 9rem;
 }
 .logo{
-    background-image:url('../images/amazon_logo.png');
+    background-image:url('/Amazon_Home_page_Clone_WebPage/images/amazon_logo.png');
     background-size: contain;
     background-repeat: no-repeat;
     height: 5rem;
