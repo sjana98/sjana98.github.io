@@ -225,7 +225,7 @@ html{
 /* Banner css */
 .banner{
     height: 35rem;
-    background-image: url('/Amazon_Home_page_Clone_WebPage/images/banner_image.jpg');
+    background-image:url('/Amazon_Home_page_Clone_WebPage/images/banner_image.jpg');
     background-size: cover;
     display: flex;
     justify-content: center;
