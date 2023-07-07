@@ -191,19 +191,19 @@ section{
     margin-bottom: 1.5rem;
 }
 .about .banner_section{
-    background: url('.../FreshPedia_Webpage/images/banner-slide/top-banner-1.jpeg');
+    background: url('/FreshPedia_Webpage/images/banner-slide/top-banner-1.jpeg');
 }
 .product .banner_section{
-    background: url('.../FreshPedia_Webpage/images/banner-slide/top-banner-2.jpeg');
+    background: url('/FreshPedia_Webpage/images/banner-slide/top-banner-2.jpeg');
 }
 .gallery .banner_section{
-    background: url('.../FreshPedia_Webpage/images/banner-slide/top-banner-3.jpg');
+    background: url('/FreshPedia_Webpage/images/banner-slide/top-banner-3.jpg');
 }
 .contact .banner_section{
-    background: url('.../FreshPedia_Webpage/images/banner-slide/top-banner-4.jpeg');
+    background: url('/FreshPedia_Webpage/images/banner-slide/top-banner-4.jpeg');
 }
 .errorPg .banner_section{
-    background: url('.../FreshPedia_Webpage/images/banner-slide/top-banner-5.jpg');
+    background: url('/FreshPedia_Webpage/images/banner-slide/top-banner-5.jpg');
 }
 .about .banner_section,
 .product .banner_section,
@@ -228,7 +228,7 @@ section{
     z-index: 2;
 }
 .header .navbar{
-    background: url('.../FreshPedia_Webpage/images/header-bg.png');
+    background: url('/FreshPedia_Webpage/images/header-bg.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -286,7 +286,7 @@ section{
 
 /* 02 Banner css */
 .banner_section{
-    background: url(.../FreshPedia_Webpage/images/banner-slide/Banner-1.jpg);
+    background: url(/FreshPedia_Webpage/images/banner-slide/Banner-1.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
