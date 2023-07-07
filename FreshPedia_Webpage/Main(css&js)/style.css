@@ -191,19 +191,19 @@ section{
     margin-bottom: 1.5rem;
 }
 .about .banner_section{
-    background: url('../images/banner-slide/top-banner-1.jpeg');
+    background: url('.../FreshPedia_Webpage/images/banner-slide/top-banner-1.jpeg');
 }
 .product .banner_section{
-    background: url('../images/banner-slide/top-banner-2.jpeg');
+    background: url('.../FreshPedia_Webpage/images/banner-slide/top-banner-2.jpeg');
 }
 .gallery .banner_section{
-    background: url('../images/banner-slide/top-banner-3.jpg');
+    background: url('.../FreshPedia_Webpage/images/banner-slide/top-banner-3.jpg');
 }
 .contact .banner_section{
-    background: url('../images/banner-slide/top-banner-4.jpeg');
+    background: url('.../FreshPedia_Webpage/images/banner-slide/top-banner-4.jpeg');
 }
 .errorPg .banner_section{
-    background: url('../images/banner-slide/top-banner-5.jpg');
+    background: url('.../FreshPedia_Webpage/images/banner-slide/top-banner-5.jpg');
 }
 .about .banner_section,
 .product .banner_section,
@@ -228,7 +228,7 @@ section{
     z-index: 2;
 }
 .header .navbar{
-    background: url('../images/header-bg.png');
+    background: url('.../FreshPedia_Webpage/images/header-bg.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -286,7 +286,7 @@ section{
 
 /* 02 Banner css */
 .banner_section{
-    background: url(../images/banner-slide/Banner-1.jpg);
+    background: url(.../FreshPedia_Webpage/images/banner-slide/Banner-1.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -370,7 +370,7 @@ section{
 
 /* 04 About css */
 .landing_about_section{
-    background: url(/images/about/about-banner.jpg);
+    background: url(.../FreshPedia_Webpage/images/about/about-banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -435,7 +435,7 @@ section{
     border-radius: 50%;
 }
 .testimonial_section .card{
-    background: url(/images/testimonial/testimonial-bg.png);
+    background: url(.../FreshPedia_Webpage/images/testimonial/testimonial-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: var(--dark-color);
@@ -469,7 +469,7 @@ section{
 
 /* 08 Footer css */
 .footer_wrapper{
-    background: url(/images/footer-bg/footer_bg.png);
+    background: url(.../FreshPedia_Webpage/images/footer-bg/footer_bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
