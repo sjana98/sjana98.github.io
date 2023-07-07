@@ -370,7 +370,7 @@ section{
 
 /* 04 About css */
 .landing_about_section{
-    background: url('/FreshPedia_Webpage/images/about/about-banner.jpg');
+    background: url('.../FreshPedia_Webpage/images/about/about-banner.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
