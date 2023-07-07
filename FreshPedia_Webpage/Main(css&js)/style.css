@@ -191,7 +191,7 @@ section{
     margin-bottom: 1.5rem;
 }
 .about .banner_section{
-    background: url('.../FreshPedia_Webpage/images/banner-slide/top-banner-1.jpeg');
+    background: url('/FreshPedia_Webpage/images/banner-slide/top-banner-1.jpeg');
 }
 .product .banner_section{
     background: url('.../FreshPedia_Webpage/images/banner-slide/top-banner-2.jpeg');
