@@ -518,7 +518,6 @@ body.dark-theme{
 }
 
 .slider{
-    overflow: hidden;
     padding: 6rem 0;
 }
 
@@ -526,6 +525,7 @@ body.dark-theme{
     width: 250px;
     margin: 0 2rem;
     border-radius: 10px;
+    transition: transform .6s;
 }
 
 .slide-track img:nth-child(even){
@@ -537,7 +537,7 @@ body.dark-theme{
 }
 
 .slide-track{
-    width: 108%;
+    width: calc(250px * 12);
     white-space: nowrap;
     animation: scroll 25s linear infinite; 
 }
@@ -547,14 +547,13 @@ body.dark-theme{
         transform: translateX(0);
     }
     100%{
-        transform: translateX(-108%);
+        transform: translateX(calc(-250px * 6));
     }
 }
 
 .slide-track img:nth-child(even):hover{
     rotate: -1.5deg;
     box-shadow: 5px 5px 25px var(--fth-changing-color);
-    
 }
 .slide-track img:nth-child(odd):hover{
     rotate: 1.5deg;
@@ -816,17 +815,15 @@ body.dark-theme{
         padding: 4.4rem 0;
     }
     .slide-track{
-        width: 271%;
-        white-space: nowrap;
-        animation: scroll 27s linear infinite; 
+        width: calc(415px * 12);
+        animation: scroll 40s linear infinite; 
     }
-    
     @keyframes scroll{
         0%{
             transform: translateX(0);
         }
         100%{
-            transform: translateX(-271%);
+            transform: translateX(calc(-415px * 6));
         }
     }
     
@@ -854,6 +851,24 @@ body.dark-theme{
         bottom: 21rem;
         left: 2rem;
         border-radius: 50% ;
+    }
+
+    .slide-track{
+        width: calc(410px * 12);
+        animation: scroll 42s linear infinite; 
+    }
+    @keyframes scroll{
+        0%{
+            transform: translateX(0);
+        }
+        100%{
+            transform: translateX(calc(-410px * 6));
+        }
+    }
+    
+    .brand__container{
+        grid-template-columns: repeat(2, 100px);
+        row-gap: .8rem;
     }
 }
 
@@ -926,17 +941,15 @@ body.dark-theme{
         width: 200px; 
     }
     .slide-track{
-        width: 176%;
-        white-space: nowrap;
-        animation: scroll 27s linear infinite; 
+        width: calc(415px * 12);
+        animation: scroll 35s linear infinite; 
     }
-    
     @keyframes scroll{
         0%{
             transform: translateX(0);
         }
         100%{
-            transform: translateX(-176%);
+            transform: translateX(calc(-415px * 6));
         }
     }
 
@@ -997,16 +1010,15 @@ body.dark-theme{
         width: 200px; 
     }
     .slide-track{
-        width: 170%;
-        white-space: nowrap;
-        animation: scroll 25s linear infinite; 
+        width: calc(365px * 12);
+        animation: scroll 35s linear infinite; 
     }
     @keyframes scroll{
         0%{
             transform: translateX(0);
         }
         100%{
-            transform: translateX(-170%);
+            transform: translateX(calc(-365px * 6));
         }
     }
     
@@ -1120,15 +1132,15 @@ body.dark-theme{
         width: 220px; 
     }
     .slide-track{
-        width: 140%;
-        animation: scroll 25s linear infinite; 
+        width: calc(365px * 12);
+        animation: scroll 35s linear infinite; 
     }
     @keyframes scroll{
         0%{
             transform: translateX(0);
         }
         100%{
-            transform: translateX(-140%);
+            transform: translateX(calc(-365px * 6));
         }
     }
 
@@ -1245,17 +1257,15 @@ body.dark-theme{
         padding: 6rem 0;
     }
     .slide-track{
-        width: 115%;
-        white-space: nowrap;
+        width: calc(390px * 12);
         animation: scroll 30s linear infinite; 
     }
-
     @keyframes scroll{
         0%{
             transform: translateX(0);
         }
         100%{
-            transform: translateX(-115%);
+            transform: translateX(calc(-390px * 6));
         }
     }
 
@@ -1292,16 +1302,15 @@ body.dark-theme{
     }
 
     .slide-track{
-        width: 108%;
-        white-space: nowrap;
-        animation: scroll 23s linear infinite; 
+        width: calc(390px * 12);
+        animation: scroll 30s linear infinite; 
     }
     @keyframes scroll{
         0%{
             transform: translateX(0);
         }
         100%{
-            transform: translateX(-108%);
+            transform: translateX(calc(-390px * 6));
         }
     }
 }
@@ -1313,16 +1322,15 @@ body.dark-theme{
     }
     
     .slide-track{
-        width: 106%;
-        white-space: nowrap;
-        animation: scroll 25s linear infinite; 
+        width: calc(390px * 12);
+        animation: scroll 30s linear infinite; 
     }
     @keyframes scroll{
         0%{
             transform: translateX(0);
         }
         100%{
-            transform: translateX(-106%);
+            transform: translateX(calc(-390px * 6));
         }
     }
 }
