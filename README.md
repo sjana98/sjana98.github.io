@@ -1,2 +1,2 @@
 - This repo is for coursera assignments.
-- And for WebpageProjects.github.io repo's webpage hosting.
+- And for WebpageProjects repo's webpage hosting.
